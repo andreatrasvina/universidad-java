@@ -123,11 +123,64 @@ public class OperadoresAritmeticos {
         System.out.println("d = " + d);
         
         var cadena1 = "Hola";
-        var cadena2 = "Adios";
-        c = cadena1 == cadena2;
+        var cadena2 = "Hola";
+        c = cadena1 == cadena2; //se comparan referencias de objetos
         
-        System.out.println("c = " + e);
+        System.out.println("c = " + c);
         
+        c = cadena1.equals(cadena2); // se comparan contenido de cadenas
+        System.out.println("c = " + c);
+        
+        /*
+            OPERADORES RELACIONALES
+        */
+        
+        c = a >= b;
+        System.out.println("c = " + c);
+        
+        if(a%2 == 0){
+            System.out.println("Es numero par");
+        } else {
+            System.out.println("Es numero impar");
+        }
+        
+        /*
+            Operadores condicionales
+        */
+        
+        a = 1;
+        var min = 0;
+        var max =10;
+        
+        var resul = a >= 0 && a<=10;
+        
+        if(resul){
+            System.out.println("Dentro de rango");
+        }else{
+            System.out.println("Fuera de rango");
+        }
+        
+        var vacaciones = false;
+        var descanso = true;
+        
+        if(vacaciones || descanso){
+            System.out.println("Puede asistir");
+        }else{
+            System.out.println("Esta ocupado");
+        }
+        
+        
+        /*
+            OPERADOR TERNARIO
+        */
+        
+        var result = (3 > 7) ? "verdadero" : "falso";
+        System.out.println("result = " + result);
+        
+        var numero = 8;
+        
+        var result1 = (numero % 2 == 0) ? "par" : "impar";
+        System.out.println("result1 = " + result1);
     }
     
 }
